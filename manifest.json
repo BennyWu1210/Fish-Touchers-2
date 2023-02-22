@@ -1,0 +1,14 @@
+{
+    "name": "[temp] Fish Touchers II",
+    "description": "[temp] the return of fish touching",
+    "version": "0.0",
+    "manifest_version": 3,
+    "permissions": [],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "testthing.html",
+        "default_icon": "touch.png"
+    }
+  }
