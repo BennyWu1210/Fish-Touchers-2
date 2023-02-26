@@ -5,10 +5,10 @@
     "manifest_version": 3,
     "permissions": [],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "index.js"
     },
     "action": {
-        "default_popup": "testthing.html",
+        "default_popup": "index.html",
         "default_icon": "touch.png"
     }
   }
