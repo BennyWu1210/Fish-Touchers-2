@@ -1,3 +1,4 @@
+/*
 function become_dalao() {
     document.getElementById("button").addEventListener("click", myFunction);
 }
@@ -8,3 +9,4 @@ function myFunction() {
 }
 
 become_dalao();
+*/
