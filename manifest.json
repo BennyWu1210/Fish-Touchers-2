@@ -3,8 +3,12 @@
     "description": "[temp] the return of fish touching",
     "version": "0.0",
     "manifest_version": 3,
-    "permissions": [],
-
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    
+    "background":{
+        "service_worker": "background.js"
+    },
     "action": {
         "default_popup": "index.html",
         "default_icon": "touch.png"

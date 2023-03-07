@@ -1,4 +1,8 @@
 console.log("g")
+let test = document.getElementById("btn");
+test.addEventListener(
+    "click", () => alert("DALAO NB!!!!!!!!!!!"), false
+);
 
 //const request = require("./API/request.js");
 //import {requestFeedback} from "./API/request.js"
