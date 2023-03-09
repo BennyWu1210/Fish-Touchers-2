@@ -1,5 +1,5 @@
 // Loading the required modules
-//const { Configuration, OpenAIApi } = require("openai");
+/*const { Configuration, OpenAIApi } = require("openai");
 import { Configuration, OpenAIApi } from "openai";
 require("dotenv").config(); // reference: https://www.npmjs.com/package/dotenv
 
@@ -12,12 +12,14 @@ const openai = new OpenAIApi(configuration);
 
 // Sending a request - for testing purpose
 export async function requestFeedback(prompt) {
+  alert("!!!!!!")
   const completion = await openai.createCompletion({
-    model: "text-davinci-003",
+    model: "gpt-3.5-turbo",
     max_tokens: 500, // subject to change - depend on how much text we want
     prompt: prompt,
   });
+  console.log("Response:");
   console.log(completion.data.choices[0].text);
 }
 
-module.exports.requestFeedback = requestFeedback;
+module.exports.request = requestFeedback;*/

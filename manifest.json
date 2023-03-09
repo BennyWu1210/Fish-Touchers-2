@@ -3,8 +3,8 @@
     "description": "[temp] the return of fish touching",
     "version": "0.0",
     "manifest_version": 3,
-    "permissions": ["scripting"],
-    "host_permissions": ["<all_urls>"],
+    "permissions": ["scripting","activeTab", "storage"],
+    "host_permissions": ["https://*/"],
     
     "background":{
         "service_worker": "background.js"
