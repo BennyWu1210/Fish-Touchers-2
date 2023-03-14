@@ -12,7 +12,6 @@ const openai = new OpenAIApi(configuration);
 
 // Sending a request - for testing purpose
 export async function requestFeedback(prompt) {
-  alert("!!!!!!")
   const completion = await openai.createCompletion({
     model: "gpt-3.5-turbo",
     max_tokens: 500, // subject to change - depend on how much text we want

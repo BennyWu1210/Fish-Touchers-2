@@ -6,27 +6,26 @@ if(typeof init === 'undefined'){
             return [...document.getElementsByTagName("p")].map(e => e.innerText).join("")
         }
         const article_content = getContent();
-        console.log(article_content);
-
-        const response = await fetch("http://localhost:8000", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "X-Requested-With",
-                "Access-Control-Allow-Private-Network": "true"
-            },
-            body: JSON.stringify({ promot: article_content }),
-        });
-
-        const data = await response.json();
-        if (response.status !== 200) {
-            throw data.error || new Error(`Request failed with status ${response.status}`);
-        } else {
-            alert("success");
-        }
-
-
+        // console.log(article_content);
+        await request(article_content);
     }
     init();
+}
+async function request(content) {
+    const api_key = "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";
+    const url = "https://api.openai.com/v1/chat/completions";
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${api_key}`
+        },
+        body: JSON.stringify({
+            "model": "gpt-3.5-turbo",
+            "messages": [{"role": "user", "content": `Do you think the following text is legit ${content}`}]
+        })
+    });
+    const res = await response.text();
+    const str = JSON.parse(res);
+    console.log(str.choices[0].message.content);
 }
