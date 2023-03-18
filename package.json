@@ -7,7 +7,7 @@
         "dotenv": "^16.0.3",
         "openai": "3.1.0"
     },
-    "type": "commonjs",
+    "type": "module",
     "engines": {
         "node": ">=14.6.0"
     }
