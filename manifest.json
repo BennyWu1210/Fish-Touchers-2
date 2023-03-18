@@ -5,12 +5,10 @@
     "manifest_version": 3,
     "permissions": ["scripting","activeTab", "storage"],
     "host_permissions": ["https://*/"],
-    
-    "background":{
-        "service_worker": "background.js"
-    },
+
     "action": {
         "default_popup": "result_page.html",
         "default_icon": "touch.png"
     }
+
   }
