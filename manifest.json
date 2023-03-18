@@ -7,7 +7,7 @@
     "host_permissions": ["https://*/"],
 
     "action": {
-        "default_popup": "result_page.html",
+        "default_popup": "result_page_3.html",
         "default_icon": "touch.png"
     }
 
