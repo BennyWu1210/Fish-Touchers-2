@@ -1,4 +1,4 @@
-import { grab } from "./content-grabber.js";
+import { main } from "./script.js";
 
 console.log("THIS IS BACKGROUND");
 
@@ -7,7 +7,7 @@ try {
     if (changeInfo.status == "complete") {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        func: grab,
+        func: main,
       });
     }
   });
