@@ -1,11 +1,13 @@
-// Script.js handles the logic of the popup page (transition between pages,
-// calling the API program, etc.)
+// // Script.js handles the logic of the popup page (transition between pages,
+// // calling the API program, etc.)
 
-console.log("ESIFj");
-export function main() {
-  console.log("MAIN");
+// console.log("ESIFj");
+// export function main() {
+//   console.log("MAIN");
 
-  chrome.runtime.onInstalled.addListener(function () {
-    chrome.action.setPopup({ popup: "popup.html" });
-  });
-}
+//   document.getElementById("btn").addEventListener("click", () => {
+//     console.log("laji guge");
+
+//     chrome.action.setPopup({ popup: "result_page_1.html" });
+//   });
+// }

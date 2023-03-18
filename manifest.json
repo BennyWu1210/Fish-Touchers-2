@@ -3,12 +3,20 @@
     "description": "[temp] the return of fish touching",
     "version": "0.0",
     "manifest_version": 3,
-    "permissions": ["scripting","activeTab", "storage", "action"],
-    "host_permissions": ["https://*/"],
 
     "action": {
         "default_popup": "index.html",
         "default_icon": "touch.png"
-    }
+    },
+    "permissions": ["scripting","activeTab", "storage", "windows", "tabs"],
+    "host_permissions": ["https://*/"],
+    "web_accessible_resources": [
+        {
+          "resources": ["result_page_1.html", "result_page_2.html", "result_page_3.html"],
+          "matches": ["https://*/*", "http://*/*"]
+        }
+      ]
+
+   
 
   }
