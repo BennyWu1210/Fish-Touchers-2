@@ -2,21 +2,26 @@
 // calling the API program, etc.)
 
 document.getElementById("btn").addEventListener("click", function() {
-    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+    // Manifest version 3 access the current active page on which the extension popup is activated
+    chrome.tabs.query({currentWindow: true, active: true}, function(tabs) {
+        // we may get the current tab's url and tab id
         console.log(tabs[0].url);
         console.log(tabs[0].id);
         fetch(`${tabs[0].url}`)
             .then(response => response.text())
             .then(html => {
+                // fetch the raw HTML for the current site
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
                 const n = doc.querySelectorAll('p').length;
                 var article_content = "";
                 for (let i = 0; i < n; i++) {
+                    // for each <p> tag attach its innerText to article_content
                     const p = doc.querySelectorAll('p').item(i);
                     article_content += p.innerText;
                 }
                 console.log("fetched content: " + article_content);
+                // make the request to gpt for analysis
                 request(article_content).then(() => {
                     console.log("request success");
                 });
