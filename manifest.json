@@ -1,15 +1,22 @@
 {
-    "name": "[temp] Fish Touchers II",
-    "description": "[temp] the return of fish touching",
-    "version": "0.0",
+    "name": "News Simplified",
+    "description": "An AI Powered tool to help you with web articles",
+    "version": "1.0",
     "manifest_version": 3,
 
     "action": {
         "default_popup": "index.html",
         "default_icon": "touch.png"
     },
+
+    "icons":{
+        "16": "touch.png",
+        "32": "touch.png",
+        "48": "touch.png",
+        "128": "touch.png"
+    },
     "permissions": ["scripting","activeTab", "storage", "windows", "tabs"],
-    "host_permissions": ["https://*/", "chrome-extension://*"],
+    "host_permissions": ["https://*/"],
     "web_accessible_resources": [
         {
           "resources": ["result_page_1.html", "result_page_2.html", "result_page_3.html"],

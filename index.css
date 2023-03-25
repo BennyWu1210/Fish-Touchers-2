@@ -1,8 +1,7 @@
 body {
     width: 360px;
-    height: 500px;
-
-    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1086518544130379856/image.png");
+    height: 540px;
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089005764120690759/image.png");
     background-size: cover;
 }
 
@@ -14,15 +13,90 @@ p {
     font-family: Verdana, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 113%;
     text-align: center;
 
     position: absolute;
-    top: 31%;
+    top: 35%;
     left: 11%;
     color: grey;
 }
-btn {
-    margin-top: 50%;
+.btn1{
+    width: 290px;
+    height: 35px;
+
+    transition-duration: 0.2s;
+
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089000193816543262/image.png");
+    background-size: cover;
+    border: none;
+
+    position: absolute;
+    top: 14%;
+    left: 20%
+}
+.btn1:hover{
+    width: 290px;
+    height: 35px;
+
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089006418931220520/image.png");
+    background-size: cover;
+    border: none;
+
+    position: absolute;
+    top: 14%;
+    left: 20%
+}
+.btn2{
+    width: 270px;
+    height: 35px;
+
+    transition-duration: 0.2s;
+
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089000282702217279/image.png");
+    background-size: cover;
+    border: none;
+
+    position: absolute;
+    top: 20.5%;
+    left: 20%
+}
+.btn2:hover{
+    width: 270px;
+    height: 35px;
+
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089010069733134437/image.png");
+    background-size: cover;
+    border: none;
+
+    position: absolute;
+    top: 20.5%;
+    left: 20%
+}
+.btn3{
+    width: 245px;
+    height: 35px;
+
+    transition-duration: 0.2s;
+
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089000361127325696/image.png?width=1750&height=266");
+    background-size: cover;
+    border: none;
+
+    position: absolute;
+    top: 27%;
+    left: 20%
+}
+.btn3:hover{
+    width: 245px;
+    height: 35px;
+
+    background-image: url("https://media.discordapp.net/attachments/1030983107098198087/1089010364848553994/image.png");
+    background-size: cover;
+    border: none;
+
+    position: absolute;
+    top: 27%;
+    left: 20%
 }
