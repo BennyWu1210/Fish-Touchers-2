@@ -9,11 +9,13 @@ document.getElementsByClassName("btn1")[0].addEventListener("click", function() 
         fetch(`${tabs[0].url}`)
             .then(response => response.text())
             .then(html => {
+                // fetch the raw HTML for the current site
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
                 const n = doc.querySelectorAll('p').length;
                 var article_content = "";
                 for (let i = 0; i < n; i++) {
+                    // for each <p> tag attach its innerText to article_content
                     const p = doc.querySelectorAll('p').item(i);
                     article_content += p.innerText;
                 }
