@@ -20,7 +20,7 @@ document.getElementsByClassName("btn1")[0].addEventListener("click", function() 
                     article_content += p.innerText;
                 }
                 //console.log("fetched content: " + article_content);
-                request(`check if the source of the following article seem credible. If the following content doesn't seem like an article, reply 'This webpage does not seem like a legitimate article...'. FYI, the url of this article is ${tabs[0].url} `, article_content).then(() => {
+                request(`check if the source of the following article seem credible. If the following content doesn't seem like a news article, reply 'This webpage does not seem like a legitimate article...'. FYI, the url of this article is ${tabs[0].url} `, article_content).then(() => {
                     console.log("request success");
                 });
             });
@@ -43,7 +43,7 @@ document.getElementsByClassName("btn2")[0].addEventListener("click", function() 
                     article_content += p.innerText;
                 }
                 //console.log("fetched content: " + article_content);
-                request("Get a summary of the following article. If the following content doesn't seem like an article, reply 'This webpage does not seem like a legitimate article...'   ", article_content).then(() => {
+                request(`Get a summary of the following article. If the following content doesn't seem like an article, reply 'This webpage does not seem like a news article...'. Limit your response to 100 words. FYI, the url of this article is ${tabs[0].url}  `, article_content).then(() => {
                     console.log("request success");
                 });
             });
@@ -66,7 +66,7 @@ document.getElementsByClassName("btn3")[0].addEventListener("click", function() 
                     article_content += p.innerText;
                 }
                 //console.log("fetched content: " + article_content);
-                request("Check for potential factual errors in the following article. If the following content doesn't seem like a legitimate article, reply 'This webpage does not seem like an article...'   ", article_content).then(() => {
+                request(`Check for potential factual errors in the following article. If the following content doesn't seem like a news article, reply 'This webpage does not seem like an article...'. Limit your response to 100 words. If the article seem like its from the future, assume that it is not. FYI, the url of this article is ${tabs[0].url}   `, article_content).then(() => {
                     console.log("request success");
                 });
             });
