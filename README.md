@@ -7,7 +7,8 @@ News Simplified is a Chrome extension that combats the spread of misinformation,
 
 
 For a more detailed introduction:
-[link to the presentation/vid here]
+
+https://docs.google.com/presentation/d/1xMnecmk0IEpz4n6SUGT-fTuonSrOaeWBtyxyjJzjJ18/edit?usp=sharing
 
 # Instruction for Installing
 1. Download the ZIP file and extract
