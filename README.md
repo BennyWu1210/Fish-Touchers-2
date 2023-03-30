@@ -20,4 +20,3 @@ The Fish Touchers team
 + Benny Wu
 + Bill Wei
 + Tommy Pang
-[add links to profiles?]
