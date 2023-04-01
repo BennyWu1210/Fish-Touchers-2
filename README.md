@@ -14,7 +14,8 @@ For a more detailed introduction:
 1. Download the ZIP file and extract
 2. In the Chrome browser, go to the Extensions dropdown and click "Manage Extensions"
 3. Enable Developer Mode, then select the extracted file in Load Unpacked
-4. Click the pin icon besides the extension under the Extensions dropdown, so you can use it with more ease. 
+4. You would need to put your own OpenAI API key in the index.js file, replacing the existing API key in the api_key variable. 
+5. Click the pin icon besides the extension under the Extensions dropdown, so you can use it with more ease. 
 
 # Team Members
 The Fish Touchers team
