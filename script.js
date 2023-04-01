@@ -88,7 +88,7 @@ async function request(prompt, content) {
     console.log("content: ")
     console.log(content)
     try {
-        const api_key = "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";
+        const api_key = "YOUR KEY HERE";
         const url = "https://api.openai.com/v1/chat/completions";
         const response = await fetch(url, {
             method: "POST",
